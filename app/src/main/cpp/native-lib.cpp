@@ -659,7 +659,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_ancestry_jniexcercise_MainActivity_ge
 		JNIEnv* env,
         jobject thisObject /* this */,
         jobject callback /* callback */) {
-    short original[] = {2,4,6,8,10,12,14};
+    short original[] = {25,38,54,32,88,46};
     int size = (sizeof(original)/sizeof(*original));
     jshortArray value = env->NewShortArray(size);
     jshort * elements = env->GetShortArrayElements(value,NULL);
@@ -681,7 +681,7 @@ extern "C" JNIEXPORT void JNICALL Java_com_ancestry_jniexcercise_MainActivity_ge
 		JNIEnv* env,
         jobject thisObject /* this */,
         jobject callback /* callback */) {
-    int original[] = {2,4,6,8,10,12,14};
+    int original[] = {1,2,4,8,16,32,64,128,256,512,1024,2048,4096,32769,65536,131072};
     int size = (sizeof(original)/sizeof(*original));
     jintArray value = env->NewIntArray(size);
     jint * elements = env->GetIntArrayElements(value,NULL);

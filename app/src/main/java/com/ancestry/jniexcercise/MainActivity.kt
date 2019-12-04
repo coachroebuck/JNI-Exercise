@@ -1,9 +1,10 @@
 package com.ancestry.jniexcercise
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,112 +13,134 @@ class MainActivity : AppCompatActivity() {
     private val callback = object : JniCallback{
         override fun onBoolean(value: Boolean) {
             Log.i(tag, "onBoolean=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onByte(value: Byte) {
             Log.i(tag, "onByte=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onChar(value: Char) {
             Log.i(tag, "onChar=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onShort(value: Short) {
             Log.i(tag, "onShort=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onInt(value: Int) {
             Log.i(tag, "onInt=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onLong(value: Long) {
             Log.i(tag, "onLong=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onFloat(value: Float) {
             Log.i(tag, "onFloat=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onDouble(value: Double) {
             Log.i(tag, "onDouble=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onString(value: String) {
             Log.i(tag, "onString=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onObject(value: Any) {
             Log.i(tag, "onObject=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onPerson(value: Person) {
             Log.i(tag, "onPerson=[${value}]")
+            showMessage(value.toString())
         }
 
         override fun onBooleanArray(value: BooleanArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onBooleanArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onByteArray(value: ByteArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onByteArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onCharArray(value: CharArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onCharArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onShortArray(value: ShortArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onShortArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onIntArray(value: IntArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onIntArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onLongArray(value: LongArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onLongArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onFloatArray(value: FloatArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onFloatArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onDoubleArray(value: DoubleArray) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onDoubleArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onStringArray(value: Array<String>) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onStringArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onObjectArray(value: Array<Any>) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onObjectArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
 
         override fun onPersonArray(value: Array<Person>) {
             val sb = StringBuilder();
             value.map { sb.append("$it\t") }
             Log.i(tag, "onPersonArray=[${sb.toString()}]")
+            showMessage(sb.toString())
         }
     }
 
@@ -127,6 +150,10 @@ class MainActivity : AppCompatActivity() {
 
         Log.i(tag, "Callback Class Name=[${callback.javaClass.name}]")
         setCallback(callback)
+    }
+
+    private fun showMessage(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     fun onSendBoolean(v: View) {
