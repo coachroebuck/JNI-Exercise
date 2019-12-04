@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/onSendBoolean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendBoolean"
+                android:onClick="onSendBoolean"/>
+
+            <Button
+                android:id="@+id/onSendByte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendByte"
+                android:onClick="onSendByte"/>
+
+            <Button
+                android:id="@+id/onSendChar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendChar"
+                android:onClick="onSendChar"/>
+
+            <Button
+                android:id="@+id/onSendShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendShort"
+                android:onClick="onSendShort"/>
+
+            <Button
+                android:id="@+id/onSendInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendInt"
+                android:onClick="onSendInt"/>
+
+            <Button
+                android:id="@+id/onSendLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendLong"
+                android:onClick="onSendLong"/>
+
+            <Button
+                android:id="@+id/onSendFloat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendFloat"
+                android:onClick="onSendFloat"/>
+
+            <Button
+                android:id="@+id/onSendDouble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendDouble"
+                android:onClick="onSendDouble"/>
+
+            <Button
+                android:id="@+id/onSendString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendString"
+                android:onClick="onSendString"/>
+
+            <Button
+                android:id="@+id/onSendObject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendObject"
+                android:onClick="onSendObject"/>
+
+            <Button
+                android:id="@+id/onSendPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendPerson"
+                android:onClick="onSendPerson"/>
+
+            <Button
+                android:id="@+id/onSendBooleanArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendBooleanArray"
+                android:onClick="onSendBooleanArray"/>
+
+            <Button
+                android:id="@+id/onSendByteArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendByteArray"
+                android:onClick="onSendByteArray"/>
+
+            <Button
+                android:id="@+id/onSendCharArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendCharArray"
+                android:onClick="onSendCharArray"/>
+
+            <Button
+                android:id="@+id/onSendShortArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendShortArray"
+                android:onClick="onSendShortArray"/>
+
+            <Button
+                android:id="@+id/onSendIntArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendIntArray"
+                android:onClick="onSendIntArray"/>
+
+            <Button
+                android:id="@+id/onSendLongArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendLongArray"
+                android:onClick="onSendLongArray"/>
+
+            <Button
+                android:id="@+id/onSendFloatArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendFloatArray"
+                android:onClick="onSendFloatArray"/>
+
+            <Button
+                android:id="@+id/onSendDoubleArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendDoubleArray"
+                android:onClick="onSendDoubleArray"/>
+
+            <Button
+                android:id="@+id/onSendStringArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendStringArray"
+                android:onClick="onSendStringArray"/>
+
+            <Button
+                android:id="@+id/onSendObjectArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendObjectArray"
+                android:onClick="onSendObjectArray"/>
+
+            <Button
+                android:id="@+id/onSendPersonArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onSendPersonArray"
+                android:onClick="onSendPersonArray"/>
+
+            <Button
+                android:id="@+id/onGetBoolean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetBoolean"
+                android:onClick="onGetBoolean"/>
+
+            <Button
+                android:id="@+id/onGetByte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetByte"
+                android:onClick="onGetByte"/>
+
+            <Button
+                android:id="@+id/onGetChar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetChar"
+                android:onClick="onGetChar"/>
+
+            <Button
+                android:id="@+id/onGetShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetShort"
+                android:onClick="onGetShort"/>
+
+            <Button
+                android:id="@+id/onGetInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetInt"
+                android:onClick="onGetInt"/>
+
+            <Button
+                android:id="@+id/onGetLong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetLong"
+                android:onClick="onGetLong"/>
+
+            <Button
+                android:id="@+id/onGetFloat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetFloat"
+                android:onClick="onGetFloat"/>
+
+            <Button
+                android:id="@+id/onGetDouble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetDouble"
+                android:onClick="onGetDouble"/>
+
+            <Button
+                android:id="@+id/onGetString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetString"
+                android:onClick="onGetStringFromJni"/>
+
+            <Button
+                android:id="@+id/onGetObject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetObject"
+                android:onClick="onGetObject"/>
+
+            <Button
+                android:id="@+id/onGetPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetPerson"
+                android:onClick="onGetPerson"/>
+
+            <Button
+                android:id="@+id/onGetBooleanArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetBooleanArray"
+                android:onClick="onGetBooleanArray"/>
+
+            <Button
+                android:id="@+id/onGetByteArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetByteArray"
+                android:onClick="onGetByteArray"/>
+
+            <Button
+                android:id="@+id/onGetCharArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetCharArray"
+                android:onClick="onGetCharArray"/>
+
+            <Button
+                android:id="@+id/onGetShortArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetShortArray"
+                android:onClick="onGetShortArray"/>
+
+            <Button
+                android:id="@+id/onGetIntArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetIntArray"
+                android:onClick="onGetIntArray"/>
+
+            <Button
+                android:id="@+id/onGetLongArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetLongArray"
+                android:onClick="onGetLongArray"/>
+
+            <Button
+                android:id="@+id/onGetFloatArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetFloatArray"
+                android:onClick="onGetFloatArray"/>
+
+            <Button
+                android:id="@+id/onGetDoubleArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetDoubleArray"
+                android:onClick="onGetDoubleArray"/>
+
+            <Button
+                android:id="@+id/onGetStringArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetStringArray"
+                android:onClick="onGetStringArray"/>
+
+            <Button
+                android:id="@+id/onGetObjectArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetObjectArray"
+                android:onClick="onGetObjectArray"/>
+
+            <Button
+                android:id="@+id/onGetPersonArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="onGetPersonArray"
+                android:onClick="onGetPersonArray"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
